@@ -1,0 +1,32 @@
+# This is a comment, ignored by the parser
+
+server:
+  # Hostname to listen on
+  host: "0.0.0.0"
+  # Port number
+  port: 8080
+  # Maximum number of concurrent connections
+  max_connections: 1000
+
+# Logging configuration
+logging:
+  level: "info"  # Can be "debug", "info", "warning", "error"
+  file: "app.log"  # Path to the log file
+
+database:
+  # Database type (e.g. mysql, postgres)
+  type: "mysql"
+  # Connection details
+  host: "localhost"
+  user: "username"
+  password: "secure_password"
+  database: "my_database"
+
+# User defined variables
+user_roles:
+  - admin
+  - editor
+  - viewer
+
+# An empty list can be defined this way
+empty_list: []
